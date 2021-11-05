@@ -31,7 +31,7 @@ public class snake_and_ladder{
                      System.out.println("PLAYER NEEDS TO GET " + (100-player_position) + " TO WIN THE GAME.\n");
                      break;
                   }
-                  System.out.println("PLAYER-1 CLIMBED LADDER WITH " + die + " AND PLAYER CURRENT POSITION :- " + player_position + " .\n");
+                  System.out.println("PLAYER CLIMBED LADDER WITH " + die + " AND PLAYER CURRENT POSITION :- " + player_position + " .\n");
                   break;
                case snake:
                   player_position -= die;
