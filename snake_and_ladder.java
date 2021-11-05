@@ -5,6 +5,9 @@ public class snake_and_ladder{
       /* TEMPORARY VARIABLES */
       int player_position = 0;
       System.out.println("PLAYER POSITION AT START :- " + player_position);
+
+		int die = (int)Math.floor(Math.random()*6+1);
+      System.out.println("DIE ROLLED AND VALUE IS " + die + ".\n");
    }
 }
 
