@@ -5,6 +5,8 @@ public class snake_and_ladder{
       /* TEMPORARY VARIABLES */
       int player_position = 0;
       int player_start_position = 0;
+		int temp_player_position = 0;
+
       int die_roll = 0;
 
       /* CONSTANT VARIABLES */
@@ -18,10 +20,17 @@ public class snake_and_ladder{
          System.out.println("DIE ROLLED BY PLAYER AND VALUE IS " + die + ".");
          if(player_start_position == 1){
             /* UC-3 :- OPTIONS */
-            int options = (int)Math.floor(Math.random()*3);
+            int options = (int)Math.floor(Math.random()*2+1);
             switch(options){
                case ladder :
+						temp_player_position = player_position;
                   player_position += die;
+						/* UC-5:- Ensure the player gets to exact winning position 100 to win the game. */
+						if(player_position > 100){
+							player_position = temp_player_position;
+							System.out.println("\nPLAYER NEEDS TO GET " + (100-player_position) + " TO WIN THE GAME.\n");
+                     break;
+						}
                   System.out.println("PLAYER CLIMBED LADDER WITH " + die + " .\n");
                   break;
                case snake :
@@ -33,8 +42,6 @@ public class snake_and_ladder{
                   }
                   System.out.println("PLAYER BITTEN BY A SNAKE WITH " + die + " .\n");
                   break;
-               default :
-                  System.out.println("PLAYER CHOOSED NO PLAY OPTION.\n");
             }
          }
          if(player_start_position == 0 && die == 6){
