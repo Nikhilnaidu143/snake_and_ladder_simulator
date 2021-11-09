@@ -7,9 +7,9 @@ public class Snake_and_ladder{
       int temp_player1_position = 0;
       int player1_start_position = 0;
 
-		int player2_position = 0;
-		int temp_player2_position = 0;
-		int player2_start_position = 0;
+      int player2_position = 0;
+      int temp_player2_position = 0;
+      int player2_start_position = 0;
 
       int die_roll = 0;
 
@@ -58,7 +58,7 @@ public class Snake_and_ladder{
             System.out.println("HURRAY ! PLAYER-1 REACHED " + player1_position + " AND WON THE GAME WITH " + die_roll + " DIE ROLLS.");
             return;
          }
-			         /* RANDOM DIE ROLL */
+                  /* RANDOM DIE ROLL */
          int die2 = (int)Math.floor(Math.random()*6+1);
          System.out.println("DIE ROLLED BY PLAYER-2 AND VALUE IS " + die2 + ".");
          if(player2_start_position == 1){
@@ -96,7 +96,7 @@ public class Snake_and_ladder{
          if( player2_position >= 100 ){
             System.out.println("HURRAY ! PLAYER-2 REACHED " + player2_position + " AND WON THE GAME WITH " + die_roll + " DIE ROLLS.");
             return;
-      	}
-   	}
-	}
+         }
+      }
+   }
 }
