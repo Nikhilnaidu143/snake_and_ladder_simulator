@@ -1,7 +1,7 @@
 public class Snake_and_ladder{
    public static void main(String[] args){
       System.out.println("WELCOME TO SNAKE & LADDER SIMULATOR...\n\n");
-
+     
       /* TEMPORARY VARIABLES */
       int player_position = 0;
       int player_start_position = 0;
@@ -27,7 +27,7 @@ public class Snake_and_ladder{
                case snake :
                   player_position -= die;
                   if(player_position < 0){
-		     player_position = 0;
+		                 player_position = 0;
                      player_start_position = 0;
                      System.out.println("OOPS! PLAYER GOT ELIMINATED. PLAYER CURRENT POSITION :- " + player_position );
                   }
@@ -49,4 +49,3 @@ public class Snake_and_ladder{
       }
    }
 }
-
