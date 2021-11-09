@@ -2,7 +2,7 @@ public class Snake_and_ladder{
    public static void main(String[] args){
       System.out.println("WELCOME TO SNAKE & LADDER SIMULATOR...\n\n");
 
-      /* TEMPORARY VARIABLES */
+      /* TEMPORARY VARIABLE */
       int player_position = 0;
 
 		/* CONSTANT VARIABLES */
@@ -31,4 +31,3 @@ public class Snake_and_ladder{
       }
    }
 }
-
