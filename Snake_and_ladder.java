@@ -27,7 +27,7 @@ public class Snake_and_ladder{
                case snake :
                   player_position -= die;
                   if(player_position < 0){
-							player_position = 0;
+		     player_position = 0;
                      player_start_position = 0;
                      System.out.println("OOPS! PLAYER GOT ELIMINATED. PLAYER CURRENT POSITION :- " + player_position );
                   }
