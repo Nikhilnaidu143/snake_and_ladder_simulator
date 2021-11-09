@@ -10,4 +10,3 @@ public class Snake_and_ladder{
       System.out.println("DIE ROLLED AND VALUE IS " + die + ".\n");
    }
 }
-
